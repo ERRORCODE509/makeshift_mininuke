@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "ident": "makeshift_mininuke",
+    "name": "makeshift_mininuke",
+    "authors": [ "ERROR_CODE" ],
+    "description": "The science checks out, I see nothing wrong here.",
+    "category": "items",
+    "dependencies": [ "dda" ]
+  }
+]

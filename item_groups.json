@@ -1,0 +1,98 @@
+[
+  {
+    "type": "item_group",
+    "id": "SUS_fridge_stocked",
+	"subtype":"collection",
+	"entries":[
+	  {
+        "distribution": [
+		  { "item": "pepsi", "charges": 1, "prob": 5, "container-item": "bottle_plastic", "sealed": false }
+        ],
+        "prob": 7
+      },
+	  {
+        "distribution": [
+		  { "item": "coca_cola", "charges": 1, "prob": 5, "container-item": "bottle_plastic", "sealed": false }
+        ],
+        "prob": 7
+      }
+	]
+  },
+  {
+    "type": "item_group",
+    "id": "SUS_fridge_partial_empty",
+	"subtype":"collection",
+	"entries":[
+	  {
+        "distribution": [
+		  { "item": "pepsi", "charges": 1, "prob": 5, "container-item": "bottle_plastic", "sealed": false }
+        ],
+        "prob": 4
+      },
+	  {
+        "distribution": [
+		  { "item": "coca_cola", "charges": 1, "prob": 5, "container-item": "bottle_plastic", "sealed": false }
+        ],
+        "prob": 4
+      }
+	]
+  },
+  {
+    "type": "item_group",
+    "id": "SUS_fridge_bachelor",
+	"subtype":"collection",
+	"entries":[
+	  {
+        "distribution": [
+		  { "item": "pepsi", "charges": 1, "prob": 5, "container-item": "bottle_plastic", "sealed": false }
+        ],
+        "prob": 6
+      },
+	  {
+        "distribution": [
+		  { "item": "coca_cola", "charges": 1, "prob": 5, "container-item": "bottle_plastic", "sealed": false }
+        ],
+        "prob": 6
+      }
+	]
+  },
+  {
+    "type": "item_group",
+    "id": "SUS_fridge_breakroom",
+	"subtype":"collection",
+	"entries":[
+	  {
+        "distribution": [
+		  { "item": "pepsi", "charges": 1, "prob": 5, "container-item": "bottle_plastic", "sealed": false }
+        ],
+        "prob": 8
+      },
+	  {
+        "distribution": [
+		  { "item": "coca_cola", "charges": 1, "prob": 5, "container-item": "bottle_plastic", "sealed": false }
+        ],
+        "prob": 8
+      }
+	]
+  },
+  {
+    "id": "SUS_pantry",
+    "type": "item_group",
+    "subtype": "collection",
+    "entries":[
+	  {
+        "distribution": [
+		  { "item": "pepsi", "charges": 1, "prob": 5, "container-item": "bottle_plastic", "sealed": false }
+        ],
+        "prob": 8
+      },
+	  {
+        "distribution": [
+		  { "item": "coca_cola", "charges": 1, "prob": 5, "container-item": "bottle_plastic", "sealed": false }
+        ],
+        "prob": 8
+      }
+	]
+  }
+]
+  

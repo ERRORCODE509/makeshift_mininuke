@@ -1,0 +1,70 @@
+[
+  {
+    "id": "makeshift_mininuke",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "makeshift mininuke" },
+    "description": "A canister with a metal sheet that separates the two substances, preventing them from making contact and undergoing annihilation. Activate to remove the metal sheet. Bewarned that you won't have long before it detonates, so it would be best to get away quickly.",
+    "weight": "7832 g",
+    "volume": "2 L",
+    "price": 0,
+    "price_postapoc": 0,
+    "to_hit": -3,
+    "bashing": 3,
+    "material": [ "steel", "junk" ],
+    "symbol": "*",
+    "color": "light_gray",
+    "use_action": {
+      "need_wielding": true,
+      "target": "makeshift_mininuke_act",
+      "msg": "You'd better get running.",
+      "target_charges": 5,
+      "active": true,
+      "menu_text": "Activate",
+      "type": "transform"
+    },
+    "flags": [ "RADIO_MODABLE", "RADIO_INVOKE_PROC", "BOMB", "TRADER_AVOID" ]
+  },
+  {
+    "id": "makeshift_mininuke_act",
+    "type": "TOOL",
+    "category": "weapons",
+    "name": { "str": "makeshift mininuke" },
+    "description": "If you're still holding this, it's already too late.",
+    "weight": "7832 g",
+    "volume": "2 L",
+    "price": 0,
+    "price_postapoc": 0,
+    "to_hit": -3,
+    "bashing": 3,
+    "material": [ "steel", "junk" ],
+    "symbol": "*",
+    "color": "light_gray",
+    "turns_per_charge": 1,
+    "max_charges": 5,
+    "use_action": {
+      "type": "explosion",
+      "fields_type": "fd_nuke_gas",
+      "fields_radius": 18,
+      "fields_min_intensity": 3,
+      "fields_max_intensity": 3,
+      "sound_volume": 2,
+      "sound_msg": "Hiss.",
+      "no_deactivate_msg": "Run.",
+      "explosion": { "power": 25000000 }
+    },
+    "flags": [ "TRADER_AVOID" ]
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "pepsi",
+    "name": { "str": "Pepsi" },
+	"copy-from": "cola"
+  },
+  {
+    "type": "COMESTIBLE",
+    "id": "coca_cola",
+    "name": { "str": "Coca Cola" },
+	"copy-from": "cola"
+  }
+]
